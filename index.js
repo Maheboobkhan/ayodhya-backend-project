@@ -73,6 +73,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
+app.get('/', (req, res)=>{
+  res.send("hello its working");
+})
+
 app.post('/submit-form', (req, res) => {
   const formData = req.body;
   const fileName = 'data.xlsx';
