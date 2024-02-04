@@ -63,6 +63,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const excel = require('exceljs');
 const fs = require('fs');
+const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3001;
